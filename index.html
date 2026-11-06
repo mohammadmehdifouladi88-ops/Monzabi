@@ -280,6 +280,7 @@ const inj=()=>{document.querySelectorAll('#m .row button[data-l]').forEach(l=>{c
 new MutationObserver(inj).observe(document.getElementById('m'),{childList:true,subtree:true});inj();
 const np=document.getElementById('np');if(np){const b=mk('');b.className='ib gl';b.style.cssText='position:absolute;top:16px;inset-inline-end:16px';b.onclick=()=>queue[idx]&&share('t:'+queue[idx].id);delete b.dataset.sx;np.appendChild(b)}new MutationObserver(()=>{const g=document.getElementById('ghs');if(!g||document.getElementById('gps2'))return;const b=document.createElement('button');b.className='pill g';b.id='gps2';b.textContent=fa()?'ساخت پیش‌نمایش لینک برای همهٔ آهنگ‌ها':'Create link previews for all songs';b.onclick=genAllPreviews;g.parentNode.after(b)}).observe(document.body,{childList:true,subtree:true});
 })();
+(()=>{if(/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Mac/.test(navigator.platform))){const s=document.createElement('style');s.textContent='#np .vol input[type=range],#np .vol button:not(#pk){display:none!important}#np .vol{justify-content:center!important}';document.head.appendChild(s)}})();
 lang();load().then(view).catch(()=>toast(t('err')));
 </script><script type="text/plain" id="tpl"><!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>منzبی · MONZABI<\/title><meta name="description" content="MONZABI — independent underground music platform">
