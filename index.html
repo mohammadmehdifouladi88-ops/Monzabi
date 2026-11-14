@@ -314,6 +314,7 @@ if(hasLy)h+='<div class="sgt"><button class="chip'+(tab=='s'?' on':'')+'" data-t
 if(tab=='l')h+='<pre>'+E(c.lyrics)+'</pre>';else{const l=sugg();h+=l.length?l.map((x,i)=>'<button class="sgr" data-i="'+i+'">'+cv(x)+'<span class="meta"><b>'+E(x.title)+'</b><small>'+E([x.artist,x.genre].filter(Boolean).join(' · '))+'</small></span><span class="pl"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></button>').join(''):'<div class="empty">'+tx('هنوز آهنگ دیگری نیست','No other songs yet')+'</div>'}
 sg.innerHTML=h};
 const ol=ldr;ldr=function(){const r=ol.apply(this,arguments);draw();return r};const ov=view;view=function(){const r=ov.apply(this,arguments);draw();return r};draw()})();
+(()=>{const s=document.createElement('style');s.textContent='#sk{direction:ltr}.pg{direction:ltr}';document.head.appendChild(s)})();
 lang();load().then(view).catch(()=>toast(t('err')));
 </script><script type="text/plain" id="tpl"><!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>منzبی · MONZABI<\/title><meta name="description" content="MONZABI — independent underground music platform">
